@@ -1,5 +1,7 @@
+import { defineConfig } from 'vite';
+
 export default defineConfig({
-  base: '/kwo-website/', // Adjust base URL to the subpath for GitHub Pages
+  base: '/kwo-website/', // Adjust base URL for GitHub Pages
   plugins: [react()],
   resolve: {
     alias: {
