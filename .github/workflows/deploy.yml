@@ -25,6 +25,9 @@ jobs:
 
       - name: Build project
         run: npm run build  # Builds the project to 'dist' (or your specified folder)
+      
+      - name: Adding CNAME files
+        run: echo "www.kwohealth.com" > dist/CNAME
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
